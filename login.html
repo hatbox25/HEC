@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+		<meta charset="utf-8">
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+<style>
+	.logomid 
+	{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+	}
+	
+	.imglogo {
+    max-width: 100%;
+	width : 250px;
+    height: auto;
+	}
+	
+</style>
+        <title>Exclusive Himatif Chat</title>
+    </head>
+	
+	
+	
+    <body id="index">
+        <div class="containers">
+            <br><br>
+			<div align="center">
+            <img src="img/logo.png" class="imglogo"><br>
+			</div>
+	
+			 <div id="login">
+                <fieldset class="clearfix">
+                    <form id="login-form" class="login-form" method="post">
+                    <p><span class="fontawesome-user"></span><input type="number"  name="npm" id="npm" placeholder="NPM.." required></p> 
+                    <p><span class="fontawesome-lock"></span><input type="password"  name="password" id="password" placeholder="Password" required></p>
+                    <p><button id="btn-login" type="submit" class="button">LOGIN</button></p>
+                    </form>
+                </fieldset>
+			</div>
+        </div>
+    </body>
+</html>

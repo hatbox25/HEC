@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width"> 
+        <link rel="stylesheet" href="css/Tampilan.css">
+        <link rel="stylesheet" href="css/profil.css">
+        
+        <script src="js/jquery.min.js"></script>
+        <title>Himatif Exclusive Messenger</title>
+    </head>
+    
+	<body>          
+        <div class="containers">
+            
+			<div class="navbars">
+                <div class="navitem" onclick="location.href='friendlist.html'">
+                    <img src="img/friend.png" />
+                </div>
+                <div class="navitem" onclick="location.href='chatlist.html'">
+                    <img src="img/chat.png" />
+                </div>
+                <div class="navitem" onclick="location.href='rapat.html'">
+                    <img src="img/rapat.png" />
+                </div>
+                <div class="navitem-sel" onclick="location.href='profil.html'">
+                    <img class="navimg" src="img/profile.png" />
+                </div>
+            </div>
+            
+            <div id="content">
+                <div class="n-profile-bar">
+                 
+				 <div class="about">
+                    <div class="my">
+                      <img src="<?php echo 'SERVER/imgProf/'.$row['foto'] ?>" />
+                    </div>
+                  </div>
+                  
+				  <div class="name">
+                    <h3><?php echo $row['nama']?></h3>
+                    <p><?php echo $row['npm']?></p>
+                  </div>
+                  
+				  <div class="n-contact">
+                    <ul>
+                        <li class="data-text">Angkatan</li>
+                            <li class="data-textR"><?php echo $row['angkatan']?></li> <br />
+                        <li class="data-text">Bidang Minat</li>
+                            <li class="data-textR"><?php echo $row['minat']?></li>
+                        <li class="data-text">Nomor HP</li>
+                            <li class="data-textR"><?php echo $row['no_hp']?></li> <br />
+                        <li class="data-text">Email</li>
+                            <li class="data-textR"><?php echo $row['email']?></li> <br />
+                        <li class="data-text">Alamat</li>
+                            <li class="data-textR"><?php echo $row['alamat']?></li> <br />
+                    </ul>
+                  </div>
+                </div>
+                
+				<div style="height:100px;padding-left:33%;padding-top:50px;">
+                    <button id="editBtn" class="button">EDIT</button>&nbsp;
+					<button onclick="location.href='index.html';sessionStorage.clear();" class="button logout">LOG OUT</button> 
+                </div>
+            </div>
+           
+		   <div id="edit-content" class="hide">
+                <div class="n-profile-bar">
+                  <div class="about">
+                    <div class="my">
+                      <img src="<?php echo 'SERVER/imgProf/'.$row['foto'] ?>" />
+                    </div>
+                  </div>
+                 
+				 <div class="name">
+                    <h3><?php echo $row['nama']?></h3>
+                    <p><?php echo $row['npm']?></p>
+                  </div>
+                  
+				  <div class="n-contact">
+                    <form method="post" enctype="multipart/form-data">
+                        <ul>
+                        <li class="data-text">Angkatan</li>
+                            <li class="data-textR"><input type="text" name="angkatan" value="<?php echo $row['angkatan']?>"></li> <br />
+                        <li class="data-text">Bidang Minat</li>
+                            <li class="data-textR"><input type="text" name="minat" value="<?php echo $row['minat']?>"></li> <br />
+                        <li class="data-text">Nomor HP</li>
+                            <li class="data-textR"><input type="text" name="no_hp" value="<?php echo $row['no_hp']?>"></li> <br />
+                        <li class="data-text">Email</li>
+                            <li class="data-textR"><input type="text" name="email" value="<?php echo $row['email']?>"></li> <br />
+                        <li class="data-text">Alamat</li>
+                            <li class="data-textR"><input  type="text"  class="style-4" name="alamat" value="<?php echo $row['alamat']?>"></li> <br />
+                        <br>
+						
+                        <p align="center"><button class="button logout" id="cancel">CANCEL</button>
+						<input type="submit" id="subEDIT" name="submit" value="SUBMIT" class="button"></p>
+
+                        </ul>
+                    </form>			  
+                  </div>
+                
+				</div>
+            </div>
+        </div>
+    </body>
+    
+</html>
