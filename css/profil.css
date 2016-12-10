@@ -1,0 +1,132 @@
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.n-profile-bar{
+  width:720px;
+  height:700px;
+  background:black;
+  padding:5px 0 0px 0;
+  border-radius:3px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07); 
+}
+
+.n-contact{
+	background:white;
+}
+
+.n-profile-bar .name{
+  width:720px;
+  border-bottom:1px solid #ebebeb;
+    height:100px;
+    margin-top: 8%;
+	
+  /*border-top:1px solid #ebebeb;*/
+}
+.n-profile-bar .name h3{
+  font-size:24px;
+  color:white;
+  text-align:center;
+}
+
+.n-profile-bar .name p{
+  font-size:16px;
+  color:white;
+  width:260px;
+  text-align:center;
+}
+
+.n-profile-bar .about{
+  width:260px;
+  height:60px;
+  font-size:11px;
+  color:#616161;
+  margin-left: 27%;
+    margin-top: 7%;
+}
+
+.n-profile-bar .about .my{
+  width:100px;;
+  height:100px;
+}
+.n-profile-bar .about .my img{
+  height:100px;
+  width:100px;
+  border-radius:50px;
+  margin:5px 25px 10px 40px;
+}
+
+ul li.data-text{
+  width:600px; 
+  display:inline-flex;
+}
+
+ul{
+  font-size:18px;
+  padding-left: 20px;
+}
+
+.n-contact ul li.data-text {
+  height:15px;
+  width:400px; 
+  display:inline-flex;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-right: 0;
+    padding-top: 50px;
+    float:left;
+    list-style-type: none;
+ border-bottom:1px solid black;
+}
+
+.n-contact ul li.data-textR {
+  height:15px;
+  width:200px; 
+  display:inline-flex;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    
+    margin-right: 0;
+    
+    list-style-type: none;
+    border-bottom:1px solid black;
+}
+
+.button {
+  outline:none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius:40px;
+  background: #fff;
+  border: 2px solid black;
+  color:black;
+  letter-spacing:1px;
+  text-shadow:0;
+  cursor: pointer; 
+  }
+  
+.button:hover {
+    color:white;
+    background: black;
+}
+
+.logout{
+	border: 2px solid red;
+}
+
+.logout:hover{
+	border: 2px solid red;
+	color:white;
+    background: red;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: solid 5px #969696;
+  transition: border 0.3s;
+}
+  
+}
+
+ 
