@@ -3,7 +3,7 @@ $(document).ready(function(){
         var data = $('#login-form').serialize();
         $.ajax({
             type:'POST',
-            url:'http://ehc.hol.es/login.php',
+            url:'http://hatbox.esy.es/login.php',
             data:data,
             async:false,
             crossDomain:true,
