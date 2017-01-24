@@ -1,109 +1,137 @@
 body{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.n-profile-bar{
-  width:720px;
-  height:700px;
-  background:black;
-  padding:5px 0 0px 0;
-  border-radius:3px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07); 
+
+ul {
+  list-style-type: none;
 }
+
+.n-profile-bar{
+    width: 100% inherit;
+    background:black;
+    padding-top: 100px;
+/*    padding:5px 0 0px 0;*/
+    border-radius:3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07); 
+}
+
+/*
+@media screen and (max-width: 689px) {
+    .n-contact left{
+    width:30%;
+}
+
+    .n-contact right{
+        width:30%;
+        text-align: right;
+    }
+}
+*/
+
+/*============FOTO==============*/
+
+.n-profile-bar .about{
+    margin-top: 5%;
+    padding-left: 37%;
+    margin-right: 33%;
+}
+
+.n-profile-bar .about .my{
+    
+}
+
+.n-profile-bar .about .image-wrapper{
+    height:110px;
+    width:110px;
+    border-radius:50%;
+    background-color: white;
+}
+
+
+.n-profile-bar .about .my img{
+    margin: 5px;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+}
+
+/*============NAMA==============*/
+
+.name{
+    margin-bottom: -5%;
+}
+
+.n-profile-bar .name h3{
+    text-align: center;
+    font-size:24px;
+    color:white;
+}
+
+.n-profile-bar .name p{
+    font-size:16px;
+    color:white;
+    text-align: center;
+}
+
+/*=========DATA DIRI============*/
 
 .n-contact{
 	background:white;
+    display: inline-block;
+    font-size:18px;
+    height: 34%;
+    width: 100%;
+    height: inherit;
+}
+
+.datarow{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    width: 90%;
+    height: 30px;
+    border-bottom: solid;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
 }
 
 .n-profile-bar .name{
-  width:720px;
-  border-bottom:1px solid #ebebeb;
+    width: 100% inherit;
+    flex: 1;
+    border-bottom:1px solid #ebebeb;
     height:100px;
     margin-top: 8%;
 	
   /*border-top:1px solid #ebebeb;*/
 }
-.n-profile-bar .name h3{
-  font-size:24px;
-  color:white;
-  text-align:center;
-}
 
-.n-profile-bar .name p{
-  font-size:16px;
-  color:white;
-  width:260px;
-  text-align:center;
-}
+/*=========TOMBOL============*/
 
-.n-profile-bar .about{
-  width:260px;
-  height:60px;
-  font-size:11px;
-  color:#616161;
-  margin-left: 27%;
-    margin-top: 7%;
-}
-
-.n-profile-bar .about .my{
-  width:100px;;
-  height:100px;
-}
-.n-profile-bar .about .my img{
-  height:100px;
-  width:100px;
-  border-radius:50px;
-  margin:5px 25px 10px 40px;
-}
-
-ul li.data-text{
-  width:600px; 
-  display:inline-flex;
-}
-
-ul{
-  font-size:18px;
-  padding-left: 20px;
-}
-
-.n-contact ul li.data-text {
-  height:15px;
-  width:400px; 
-  display:inline-flex;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    margin-right: 0;
-    padding-top: 50px;
-    float:left;
-    list-style-type: none;
- border-bottom:1px solid black;
-}
-
-.n-contact ul li.data-textR {
-  height:15px;
-  width:200px; 
-  display:inline-flex;
-    padding-left: 50px;
-    padding-bottom: 20px;
-    padding-top: 50px;
-    
-    margin-right: 0;
-    
-    list-style-type: none;
-    border-bottom:1px solid black;
+.profile-button{
+    text-align: center;
+    height:20%;
+    padding-top:3%;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 .button {
-  outline:none;
-  height: 40px;
-  text-align: center;
-  width: 130px;
-  border-radius:40px;
-  background: #fff;
-  border: 2px solid black;
-  color:black;
-  letter-spacing:1px;
-  text-shadow:0;
-  cursor: pointer; 
+    text-align: center;
+    outline:none;
+    height: 40px;
+    width: 100px;    
+    border-radius:40px;    
+    background: #fff;
+    border: 2px solid black;
+    color:black;
+    letter-spacing:2px;
+    text-shadow:0;
+    cursor: pointer; 
   }
   
 .button:hover {
@@ -126,7 +154,89 @@ input[type="text"] {
   border: solid 5px #969696;
   transition: border 0.3s;
 }
-  
+
+/*=========RESPONSIVE============*/
+
+@media screen and (max-width: 719px) {
+    .n-profile-bar{
+        width: 100% inherit;
+        flex: 1;     
+    }
+    .n-profile-bar .name h3{
+
+    }
+
+    .n-profile-bar .name p{
+
+    }
 }
 
- 
+@media screen and (max-width: 449px) {
+    .profile-button{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .profile-button{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 279px) {
+    .profile-button{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+@media screen and (max-width: 260px) {
+    .n-profile-bar .name p{
+      width:100%;
+    }
+}
+
+/*
+ul li.data-text{
+  width:600px; 
+  display:inline-flex;
+}
+
+ul{
+  font-size:18px;
+  padding-left: 20px;
+}
+*/
+
+
+/*
+.n-contact ul li.data-text {
+  height:15px;
+  width:200px; 
+  display:inline-flex;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-right: 0;
+    padding-top: 50px;
+    float:left;
+    list-style-type: none;
+ border-bottom:1px solid black;
+}
+
+.n-contact ul li.data-textR {
+  height:15px;
+  width:400px; 
+  display:inline-flex;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    
+    margin-right: 0;
+    
+    list-style-type: none;
+    border-bottom:1px solid black;
+}
+*/
