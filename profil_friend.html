@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="css/profil.css">
         
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="js/profile.js"></script>
+        <script type="text/javascript" src="js/profile_friend.js"></script>
         <title>Himatif Exclusive Messenger</title>
     </head>
     
@@ -13,7 +13,7 @@
         <div class="containers">
             
 			<div class="navbars">
-                <div class="navitem" onclick="location.href='friendlist.html'">
+                <div class="navitem-sel" onclick="location.href='friendlist.html'">
                     <img src="img/friend.png" />
                 </div>
                 <div class="navitem" onclick="location.href='chatlist.html'">
@@ -22,7 +22,7 @@
                 <div class="navitem" onclick="location.href='rapat.html'">
                     <img src="img/rapat.png" />
                 </div>
-                <div class="navitem-sel" onclick="location.href='profil.html'">
+                <div class="navitem" onclick="location.href='profil.html'">
                     <img class="navimg" src="img/profile.png" />
                 </div>
             </div>
@@ -71,11 +71,7 @@
 
                     <div class="profile-button">
                         <div style="width:100%;">
-                            <button onclick="location.href='edit.html'" class="button">EDIT</button>
-                        </div>
-                        <br>
-                        <div style="width:100%;">
-                            <button onclick="location.href='login.html';sessionStorage.clear();" class="button logout">LOG OUT</button> 
+                            <button onclick="location.href='friendlist.html';" class="button logout">BACK</button> 
                         </div>                        
                     </div>
                     

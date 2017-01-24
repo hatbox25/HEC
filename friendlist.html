@@ -5,12 +5,51 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="js/friendlist.js"></script>
+        <script type="text/javascript">
+            function onLoad() {
+                document.addEventListener("deviceready", onDeviceReady, false);
+            }
+            function onDeviceReady() {
+                // Register the event listener
+                document.addEventListener("backbutton", onBackKeyDown, false);
+            }
+            function onBackKeyDown() {
+            }
+        </script>
         
         <title>Himatif Exclusive Messenger</title>
     </head>
     
 	<body id="main">          
         <div class="containers">
+            
+            <div id="PopUpWindow">
+                
+                <div class="PopHeader" id="PopToggle">                                      
+                    <div style="float:right;padding-right:5px;font-size:150%;">
+                        X
+                    </div>                    
+                </div>
+                
+                <div id="PopImg">
+                    <div class="ImgWrap">
+                        
+                    </div>
+                </div>
+                <div id="PopName">
+                    
+                </div>
+                <div id="PopNPM">
+                    
+                </div>
+                <div id="PopFunc" onclick="location.href='chatroom.html'">
+                    CHAT
+                </div>
+                <div id="PopFunc" onclick="location.href='profil_friend.html'" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                    PROFILE
+                </div>                
+            </div>
+            
             <div class="navbars">
                 <div class="navitem-sel" onclick="location.href='friendlist.html'">
                     <img src="img/friend.png" />

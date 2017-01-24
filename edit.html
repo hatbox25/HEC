@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width"> 
+        <link rel="stylesheet" href="css/Tampilan.css">
+        <link rel="stylesheet" href="css/profil.css">
+        
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/edit.js"></script>
+        <title>Himatif Exclusive Messenger</title>
+    </head>
+    
+	<body>          
+        <div class="containers">
+            
+			<div class="navbars">
+                <div class="navitem" onclick="location.href='friendlist.html'">
+                    <img src="img/friend.png" />
+                </div>
+                <div class="navitem" onclick="location.href='chatlist.html'">
+                    <img src="img/chat.png" />
+                </div>
+                <div class="navitem" onclick="location.href='rapat.html'">
+                    <img src="img/rapat.png" />
+                </div>
+                <div class="navitem-sel" onclick="location.href='profil.html'">
+                    <img class="navimg" src="img/profile.png" />
+                </div>
+            </div>
+            
+            <div id="content">
+                <div class="n-profile-bar">
+                    <div class="about">
+                        <div class="my" id="P_foto">
+                            
+                        </div>
+                    </div>
+
+                    <div class="name">
+                        <h3 id="P_nama"></h3>
+                        <p id="P_npm"></p>
+                    </div>
+
+                    <div class="n-contact">
+                        <ul>
+                            <li class="data-text">Angkatan</li>
+                            <li class="data-textR">
+                                <input type="text" id="P_angkatan">
+                            </li> <br/>
+                            <li class="data-text">Bidang Minat</li>
+                            <li class="data-textR">
+                                <input type="text" id="P_minat">
+                            </li>
+                            <li class="data-text">Nomor HP</li>
+                            <li class="data-textR">
+                                <input type="text" id="P_hp">
+                            </li> <br/>
+                            <li class="data-text">Email</li>
+                            <li class="data-textR">
+                                <input type="text" id="P_email">
+                            </li> <br/>
+                            <li class="data-text">Alamat</li>
+                            <li class="data-textR">
+                                <input type="text" id="P_alamat">
+                            </li> <br/>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="profile-button">
+                    <div style="width:100%;">
+                        <button onclick="location.href='profil.html'" class="button logout">CANCEL</button>
+                    </div>
+                    <br>
+                    <div style="width:100%;">
+                        <button id="btn-submit" class="button">SUBMIT</button>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
